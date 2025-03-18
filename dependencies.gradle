@@ -56,11 +56,11 @@ dependencies {
         transitive = false
     }
 
-    compileOnly("com.github.GTNewHorizons:Angelica:1.0.0-beta38:api") {
+    compileOnly("com.github.GTNewHorizons:Angelica:1.0.0-beta39:api") {
         transitive = false
     }
 
-    compileOnly("com.github.GTNewHorizons:lwjgl3ify:2.1.9:api") {
+    compileOnly("com.github.GTNewHorizons:lwjgl3ify:2.1.11:api") {
         transitive = false
     }
 
