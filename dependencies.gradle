@@ -52,7 +52,7 @@ dependencies {
     compileOnly 'com.github.GTNewHorizons:ironchest:6.1.2'
     compileOnly 'curse.maven:applied-energistics-2-223794:2296430'
 
-    compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.13.18-GTNH:dev") {
+    compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.13.20-GTNH:dev") {
         transitive = false
     }
 
