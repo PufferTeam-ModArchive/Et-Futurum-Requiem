@@ -1,0 +1,12 @@
+name: Mention upstream repo for new pull requests
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  comment:
+    uses: GTNewHorizons/GTNH-Actions-Workflows/.github/workflows/upstream_commentor_ref.yml@master
+    secrets: inherit
+    with:
+      upstream: 'https://github.com/Roadhog360/Et-Futurum-Requiem'
