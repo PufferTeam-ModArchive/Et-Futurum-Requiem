@@ -52,15 +52,15 @@ dependencies {
     compileOnly 'com.github.GTNewHorizons:ironchest:6.1.2'
     compileOnly 'curse.maven:applied-energistics-2-223794:2296430'
 
-    compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.13.20-GTNH:dev") {
+    compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.13.25-GTNH:dev") {
         transitive = false
     }
 
-    compileOnly("com.github.GTNewHorizons:Angelica:1.0.0-beta40:api") {
+    compileOnly("com.github.GTNewHorizons:Angelica:1.0.0-beta41:api") {
         transitive = false
     }
 
-    compileOnly("com.github.GTNewHorizons:lwjgl3ify:2.1.11:api") {
+    compileOnly("com.github.GTNewHorizons:lwjgl3ify:2.1.12:api") {
         transitive = false
     }
 
