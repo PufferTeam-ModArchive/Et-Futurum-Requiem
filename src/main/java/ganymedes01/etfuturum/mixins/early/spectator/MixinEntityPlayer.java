@@ -48,18 +48,12 @@ public abstract class MixinEntityPlayer extends EntityLivingBase {
 
 	@Override
 	public boolean isOnLadder() {
-		if (SpectatorMode.isSpectator((EntityPlayer) (Object) this)) {
-			return false;
-		}
-		return super.isOnLadder();
+		return !SpectatorMode.isSpectator((EntityPlayer) (Object) this) && super.isOnLadder();
 	}
 
 	@Override
 	public boolean handleWaterMovement() {
-		if (SpectatorMode.isSpectator((EntityPlayer) (Object) this)) {
-			return false;
-		}
-		return super.handleWaterMovement();
+		return !SpectatorMode.isSpectator((EntityPlayer) (Object) this) && super.handleWaterMovement();
 	}
 
 	@Inject(method = "getEquipmentInSlot", at = @At(value = "HEAD"), cancellable = true)
@@ -93,6 +87,6 @@ public abstract class MixinEntityPlayer extends EntityLivingBase {
 	@Override
 	public boolean canAttackWithItem()
 	{
-		return false;
+		return !SpectatorMode.isSpectator((EntityPlayer) (Object) this) && super.canAttackWithItem();
 	}
 }
