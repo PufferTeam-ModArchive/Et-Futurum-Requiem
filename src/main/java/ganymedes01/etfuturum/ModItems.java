@@ -149,4 +149,5 @@ public enum ModItems {
 	public ItemStack newItemStack(int count, int meta) {
 		return new ItemStack(this.get(), count, meta);
 	}
+
 }
