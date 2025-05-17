@@ -278,6 +278,7 @@ public enum ModBlocks {
 
 	IRON_TRAPDOOR(ConfigBlocksItems.enableIronTrapdoor, new BlockIronTrapdoor()),
 	MAGMA(ConfigBlocksItems.enableMagmaBlock, new BlockMagma()),
+	BARREL(ConfigBlocksItems.enableBarrel, new BlockBarrel()),
 	LANTERN(ConfigBlocksItems.enableLantern, new BlockLantern("lantern", 15)),
 	SOUL_LANTERN(ConfigBlocksItems.enableLantern && ConfigBlocksItems.enableSoulLighting, new BlockLantern("soul_lantern", 10)),
 	SOUL_TORCH(ConfigBlocksItems.enableSoulLighting, new BlockSoulTorch()),
