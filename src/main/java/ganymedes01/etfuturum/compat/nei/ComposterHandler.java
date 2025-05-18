@@ -183,7 +183,7 @@ public class ComposterHandler extends TemplateRecipeHandler implements ICrafting
 	}
 
 	@Override
-	public List<String> handleItemTooltip(GuiRecipe gui, ItemStack stack, List<String> currenttip, int recipe) {
+	public List<String> handleItemTooltip(GuiRecipe<?> gui, ItemStack stack, List<String> currenttip, int recipe) {
 		if (stack != null && this.props.containsKey(stack)) {
 			TableProps props = this.props.get(stack);
 			currenttip.add(currenttip.size() - 1, "§9" + I18n.format("efr.nei.amount") + ":§6 " + props.minSize + "§7~§6" + props.maxSize);
